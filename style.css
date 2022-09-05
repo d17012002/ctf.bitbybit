@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.story{
+    margin-top: 50px;
+    width: 50%;
+    padding: 5%;
+    box-shadow: 5px 5px 8px #888888;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#idd{
+    margin-top: 30px;
+    text-align: center;
+}
+
+i{
+    color: rgba(255, 240, 240, 0.87);
+    margin-right: 30px;
+    transform: rotate(0deg);
+}
+
+.ring{
+    font-size: x-large;
+}
+
+.ring-bell{
+    animation-name: ring;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+    font-size: xx-large;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+        
+    }
+}
+
+nav{
+    background-color: rgb(79, 149, 255);
+}
+
+@media only screen and (max-width: 600px) {
+    .story {
+        width: 90%;
+    }
+  }
